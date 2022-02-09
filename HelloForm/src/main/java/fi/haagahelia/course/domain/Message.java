@@ -2,25 +2,25 @@ package fi.haagahelia.course.domain;
 
 
 public class Message {
-	private long id;
+	private int age;
 
-	private String msg;
+	private String name;
 	
-	public long getId() {
-		return id;
+	public long getAge() {
+		return age;
 	}
-	public void setId(long id) {
-		this.id = id;
+	public void setId(int age) {
+		this.age = age;
 	}
-	public String getMsg() {
-		return msg;
+	public String getName() {
+		return name;
 	}
-	public void setMsg(String msg) {
-		this.msg = msg;
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 	@Override
 	public String toString() {
-		return "Message [msg=" + msg + "]";
+		return "Message [name=" + name + " age="+ age + "]";
 	}
 }

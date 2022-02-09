@@ -17,12 +17,14 @@ public class MessageController {
 	@RequestMapping(value = "/hello", method = RequestMethod.GET)
 	public String greetingForm(Model model) {
 		model.addAttribute("message", new Message());
+
 		return "hello";
 	}
 
 	@RequestMapping(value = "/hello", method = RequestMethod.POST)
-	public String greetingSubmit(@ModelAttribute Message msg, Model model) {
-		model.addAttribute("message", msg);
+	public String greetingSubmit(@ModelAttribute Message message, Model model) {
+		model.addAttribute("name", message.getName());
+		model.addAttribute("age", message.getAge());
 		return "result";
 	}
 }
