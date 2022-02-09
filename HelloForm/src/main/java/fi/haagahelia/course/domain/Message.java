@@ -2,14 +2,14 @@ package fi.haagahelia.course.domain;
 
 
 public class Message {
-	private int age;
+	private long age;
 
 	private String name;
 	
 	public long getAge() {
 		return age;
 	}
-	public void setId(int age) {
+	public void setAge(long age) {
 		this.age = age;
 	}
 	public String getName() {

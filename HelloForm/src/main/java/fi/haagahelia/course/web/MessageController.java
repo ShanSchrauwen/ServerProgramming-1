@@ -23,8 +23,8 @@ public class MessageController {
 
 	@RequestMapping(value = "/hello", method = RequestMethod.POST)
 	public String greetingSubmit(@ModelAttribute Message message, Model model) {
-		model.addAttribute("name", message.getName());
-		model.addAttribute("age", message.getAge());
+		model.addAttribute("message",message);
+	
 		return "result";
 	}
 }

@@ -6,10 +6,8 @@
 </head>
 <body>
 	<h1>Result</h1>
-	<div th:if="${message.age} &gt; 17">    <p th:text="'Hello ' + ${message.name}" /></div>
-	<div th:if="${message.age} &lt; 18">    <p th:text="'You are too young!'" /></div>
-	
-    <p th:text="'age: ' + ${message.age}" />
+	<div th:if="${message.age} &gt; 17"><p th:text="'Hello ' + ${message.name}" /></div>
+		<div th:if="${message.age} &lt; 18"><p th:text="'You are too young!'" /></div>
     <a href="/hello">Submit another message</a>
 </body>
 </html>
